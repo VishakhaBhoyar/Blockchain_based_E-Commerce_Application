@@ -1,0 +1,31 @@
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="typeahead.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('input.typeahead').typeahead({
+        name: 'typeahead',
+        remote:'search.php?key=%QUERY',
+        limit : 10
+    });
+});
+    </script>
+	</head>
+	<body>
+    
+    
+    
+   
+       
+      
+                
+                
+          
+            <form action="search/search.php" method="get" id="search_box">
+			<div class="wrapper">
+             <input type="text" name="q" required autofocus style="font-family: 'Rokkitt', serif;" class="typeahead tt-query" id="search" placeholder="Search for Notes" autocomplete="off" spellcheck="false" />
+				<button type="submit" class="search_btn"><img src="img/searchicon.png" title="Search" /></button>
+			</div>
+		</form>
+        
+  
